@@ -146,9 +146,4 @@ MochaHub is a modern mobile application designed for coffee lovers, offering fas
 
 ---
 
-
-> 💡 Tip: Place your actual screenshots or export pages from your PDF to `./screenshots/` folder, keeping the same file names to display them correctly.
-
----
-
 > MochaHub delivers a seamless, fast, and personalized coffee shop experience, right from your mobile device! ☕
