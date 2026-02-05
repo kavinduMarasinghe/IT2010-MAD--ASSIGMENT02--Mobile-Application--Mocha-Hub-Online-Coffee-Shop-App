@@ -85,38 +85,67 @@ MochaHub is a modern mobile application designed for coffee lovers, offering fas
 ## 📷 Screenshots / PDF Placeholders
 
 ### Splash/Launch Screen
-![Splash Screen](./screenshots/splash_screen.png)  
+![Figure 1 – Splash Screen](./screenshots/figure_01.png)  
+![Figure 2 – Splash Screen](./screenshots/figure_02.png)  
+![Figure 3 – Splash Screen](./screenshots/figure_03.png)  
 *MochaHub logo with coffee cup icon*
 
+---
+
 ### Onboarding Screens (3 slides)
-![Onboarding Slide 1](./screenshots/onboarding1.png)  
-![Onboarding Slide 2](./screenshots/onboarding2.png)  
-![Onboarding Slide 3](./screenshots/onboarding3.png)  
+![Figure 4 – Onboarding](./screenshots/figure_04.png)  
+![Figure 5 – Onboarding](./screenshots/figure_05.png)  
+![Figure 6 – Onboarding](./screenshots/figure_06.png)  
 *Easy ordering, customization, and rewards*
 
+---
+
+### Login & Sign-Up Screens
+![Figure 7 – Login](./screenshots/figure_07.png)  
+![Figure 8 – Sign Up](./screenshots/figure_08.png)
+
+---
+
 ### Home Screen
-![Home Screen](./screenshots/home_screen.png)  
+![Figure 9 – Home](./screenshots/figure_09.png)  
+![Figure 10 – Home](./screenshots/figure_10.png)  
 *Specials and recommended coffees*
 
-### Menu Screen
-![Menu Screen](./screenshots/menu_screen.png)  
-*Coffee list with Add to Cart buttons*
+---
 
-### Deals Screen
-![Deals Screen](./screenshots/deals_screen.png)  
-*Discounts and seasonal promotions*
+### Menu & Deals Screens
+![Figure 11 – Featured](./screenshots/figure_11.png)  
+![Figure 12 – Featured](./screenshots/figure_12.png)  
+![Figure 13 – Deals](./screenshots/figure_13.png)  
+![Figure 14 – Deals](./screenshots/figure_14.png)  
+*Coffee list with offers and promotions*
 
-### Categories Screen
-![Categories Screen](./screenshots/categories_screen.png)  
-*Coffee types, snacks, and desserts*
+---
 
-### Profile Screen
-![Profile Screen](./screenshots/profile_screen.png)  
-*User info, loyalty points, and past orders*
+### Categories & Profile Screens
+![Figure 15 – Categories](./screenshots/figure_15.png)  
+![Figure 16 – Categories](./screenshots/figure_16.png)  
+![Figure 17 – Profile](./screenshots/figure_17.png)  
+![Figure 18 – Profile](./screenshots/figure_18.png)  
+*Coffee types, snacks, desserts, and user details*
+
+---
 
 ### Cart & Checkout Page
-![Cart & Checkout Screen](./screenshots/cart_checkout.png)  
+![Figure 19 – Cart](./screenshots/figure_19.png)  
+![Figure 20 – Checkout](./screenshots/figure_20.png)  
 *Selected items, payment option, and order tracking*
+
+
+
+# 🛠 Technologies Used
+- Android Studio
+- Java / Kotlin
+- XML Layouts
+- Material Design Components
+
+---
+
 
 > 💡 Tip: Place your actual screenshots or export pages from your PDF to `./screenshots/` folder, keeping the same file names to display them correctly.
 
