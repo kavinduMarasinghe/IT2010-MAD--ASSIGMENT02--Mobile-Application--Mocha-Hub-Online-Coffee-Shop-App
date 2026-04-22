@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <!-- Top bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/colorSecondary">
+
+            <TextView
+                android:id="@+id/categoriesGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:text="Good morning coffee lover !"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/cartButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="false"
+                android:layout_marginEnd="14dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Cart"
+                android:src="@drawable/ic_cart"
+                android:layout_marginTop="65dp"/>
+        </RelativeLayout>
+
+        <!-- Title and subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="@color/colorSecondary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore our menu category"
+            android:textColor="#90725D"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="14dp" />
+
+
+        <!-- Category cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp">
+
+            <!-- Left icon section -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="-14dp"
+                android:layout_marginEnd="-14dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_coffee"
+                    android:contentDescription="Category icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Right details section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="12dp"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Espresso Based"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/rounded_corner_light"
+                        android:text="6 items"
+                        android:textColor="@color/colorSecondary"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any coffee drinks - mix and match"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid until: 2025-12-31"
+                    android:textColor="#8D7A6D"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:id="@+id/useCodeBtnCat1"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="+ Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp">
+
+            <!-- Left icon section -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="-14dp"
+                android:layout_marginEnd="-14dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_coffee"
+                    android:contentDescription="Category icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Right details section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="12dp"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Americano Based"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/rounded_corner_light"
+                        android:text="12 items"
+                        android:textColor="@color/colorSecondary"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any americano drinks - flavoured"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid until: 2025-12-31"
+                    android:textColor="#8D7A6D"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="+ Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp">
+
+            <!-- Left icon section -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="-14dp"
+                android:layout_marginEnd="-14dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_coffee"
+                    android:contentDescription="Category icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Right details section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="12dp"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Iced Mocha Based"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/rounded_corner_light"
+                        android:text="8 items"
+                        android:textColor="@color/colorSecondary"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any Iced mocha drinks"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid until: 2025-12-31"
+                    android:textColor="#8D7A6D"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:id="@+id/useCodeBtnCat1"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="+ Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp">
+
+            <!-- Left icon section -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="-14dp"
+                android:layout_marginEnd="-14dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_coffee"
+                    android:contentDescription="Category icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Right details section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="12dp"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cold Cofee Based"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/rounded_corner_light"
+                        android:text="7 items"
+                        android:textColor="@color/colorSecondary"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For cold coffee drinks - mix and cold"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid until: 2025-12-31"
+                    android:textColor="#8D7A6D"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="+ Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp">
+
+            <!-- Left icon section -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="-14dp"
+                android:layout_marginEnd="-14dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_coffee"
+                    android:contentDescription="Category icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Right details section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="12dp"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Iced Tea Based"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/rounded_corner_light"
+                        android:text="10 items"
+                        android:textColor="@color/colorSecondary"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any iced tea drinks"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid until: 2025-12-31"
+                    android:textColor="#8D7A6D"
+                    android:textSize="13sp"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="+ Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="26dp"
+            android:layout_marginHorizontal="14dp">
+
+            <!-- Stat Card 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="59"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Items"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- Stat Card 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- Stat Card 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Items"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

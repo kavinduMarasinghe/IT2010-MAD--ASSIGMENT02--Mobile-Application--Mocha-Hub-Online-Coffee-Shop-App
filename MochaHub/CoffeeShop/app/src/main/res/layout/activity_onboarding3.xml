@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_onboard3"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Card container -->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_onboard3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:padding="32dp"
+        android:layout_marginHorizontal="24dp"
+        android:elevation="4dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMIZE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Spacer (pushes description to bottom) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="Personalize your drinks exactly how you like them. Choose milk types, sweetness level, and more."
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Bottom Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_bg"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

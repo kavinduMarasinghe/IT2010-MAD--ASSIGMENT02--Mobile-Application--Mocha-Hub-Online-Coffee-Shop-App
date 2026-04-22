@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_onboard1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- Card container -->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_onboard1"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="EASY\nORDERING"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <!-- Spacer (pushes description to bottom) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="Browse our menu and place orders in just a few taps.\Skip the queue and get your coffee faster."
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_bg"
+        android:elevation="2dp"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>

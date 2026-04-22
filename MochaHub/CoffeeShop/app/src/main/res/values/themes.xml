@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Use AppCompat as the parent -->
+    <style name="Theme.CoffeeShop" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize colors as needed -->
+        <item name="colorPrimary">#D8C6B3</item>
+        <item name="colorPrimaryDark">#B8A07B</item>
+        <item name="colorAccent">#6C4E36</item>
+    </style>
+</resources>

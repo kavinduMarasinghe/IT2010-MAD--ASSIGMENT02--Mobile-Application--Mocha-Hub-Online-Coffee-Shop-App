@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="App Logo" />
+
+        <!-- Register Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondary"
+            android:textSize="25sp"
+            android:letterSpacing="0.09"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3" />
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edit_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_email1"
+                android:contentDescription="Email Icon"
+                app:tint="@color/colorSecondary" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingEnd="8dp"/>
+        </LinearLayout>
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edit_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_password"
+                android:contentDescription="Password Icon"
+                app:tint="@color/colorSecondary" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingEnd="8dp"/>
+        </LinearLayout>
+
+        <!-- Re-enter Password Field -->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="14dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_edit_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_password"
+                android:contentDescription="Password Icon"
+                app:tint="@color/colorSecondary" />
+
+            <EditText
+                android:id="@+id/rePasswordEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Re-enter Password"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingEnd="8dp"/>
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/button_bg"/>
+
+        <!-- Or Connect With -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or connect with"
+            android:textColor="#776657"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+
+        <!-- Social Login Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="14dp">
+
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:text="Google"
+                android:textAllCaps="false"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_edit_bg"
+                android:drawableLeft="@drawable/ic_google"
+                android:drawablePadding="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <Button
+                android:id="@+id/facebookButton"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_blue_button"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:drawablePadding="12dp"/>
+        </LinearLayout>
+
+        <!-- Signup link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't you have an account?SignUp"
+            android:textColor="#776657"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"
+            android:textAlignment="center"/>
+
+        <!-- Agreement -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By continuing, you agree to our\nUser Agreement and Privacy Policy."
+            android:textColor="#82695C"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:layout_marginTop="190dp"
+            android:layout_marginBottom="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

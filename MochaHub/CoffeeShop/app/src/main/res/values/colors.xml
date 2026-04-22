@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D8C6B3</color><!-- Primary color (60%) - background etc -->
+    <color name="colorSecondary">#6C4E36</color><!-- Secondary color (30%) -->
+    <color name="white">#FFFFFF</color><!-- Accent color (10%) -->
+
+    <!-- Other colors -->
+    <color name="black">#000000</color>
+</resources>

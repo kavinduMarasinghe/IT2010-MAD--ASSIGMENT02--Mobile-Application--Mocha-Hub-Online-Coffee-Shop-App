@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <!-- Top bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/colorSecondary">
+
+            <TextView
+                android:id="@+id/dealsGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="16dp"
+                android:text="Good morning coffee lover !"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="70dp"/>
+
+            <ImageButton
+                android:id="@+id/cartButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="false"
+                android:layout_marginEnd="14dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Cart"
+                android:src="@drawable/ic_cart"
+                android:layout_marginTop="65dp"
+                />
+        </RelativeLayout>
+
+        <!-- Section header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Offers"
+            android:textColor="@color/colorSecondary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save more on your favourite drinks"
+            android:textColor="#90725D"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Offer cards: Repeat this block for each offer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buy 2 get 1 free"
+                    android:textColor="@color/colorSecondary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/rounded_corner_light"
+                    android:text="33% OFF"
+                    android:textColor="@color/colorSecondary"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="2dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any coffee drinks - mix and match"
+                android:textColor="@color/colorSecondary"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid until: 2025-12-31"
+                android:textColor="#8D7A6D"
+                android:textSize="13sp"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:id="@+id/useCodeButton1"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_bg"
+                android:text="Code: p123"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buy 1 get 1 free"
+                    android:textColor="@color/colorSecondary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/rounded_corner_light"
+                    android:text="29% OFF"
+                    android:textColor="@color/colorSecondary"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="2dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any Iced Mocha drinks"
+                android:textColor="@color/colorSecondary"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid until: 2025-12-31"
+                android:textColor="#8D7A6D"
+                android:textSize="13sp"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_bg"
+                android:text="Code: p124"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buy 2 get free Iced Mocha"
+                    android:textColor="@color/colorSecondary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/rounded_corner_light"
+                    android:gravity="center"
+                    android:text="35% OFF"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any coffee drinks - mix and match"
+                android:textColor="@color/colorSecondary"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid until: 2025-12-31"
+                android:textColor="#8D7A6D"
+                android:textSize="13sp"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_bg"
+                android:text="Code: p129"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="14dp"
+            android:elevation="2dp"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buy 3 get 1 free"
+                    android:textColor="@color/colorSecondary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/rounded_corner_light"
+                    android:text="43% OFF"
+                    android:textColor="@color/colorSecondary"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="2dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For any coffee drinks"
+                android:textColor="@color/colorSecondary"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid until: 2025-12-31"
+                android:textColor="#8D7A6D"
+                android:textSize="13sp"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="6dp"/>
+
+            <Button
+                android:id="@+id/useCodeButton2"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_bg"
+                android:text="Code: p145"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <!-- Bottom promo images row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/deal1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corner_white"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Deal 1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/deal2"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corner_white"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Deal 2"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/colorSecondary">
+
+            <TextView
+                android:id="@+id/cartGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:text="Good morning coffee lover !"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Back Button and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Cart"
+                android:textColor="@color/colorSecondary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="7dp" />
+        </LinearLayout>
+
+        <!-- Cart Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="12dp">
+
+            <!-- Cart Product Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_white"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/cart_img1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_white"
+                    android:contentDescription="Product" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espresso"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Large"
+                        android:textColor="#82695C"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$5.99"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp" />
+
+                    <!-- Quantity controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp">
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_minus"
+                            android:contentDescription="Decrease" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="36dp"
+                            android:text="1"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondary" />
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Increase" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Delete button -->
+                <ImageButton
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Remove"
+                    app:tint="#D32F2F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_white"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_espresso"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_white"
+                    android:contentDescription="Product" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Premium Espresso"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Large"
+                        android:textColor="#82695C"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$4.90"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp" />
+
+                    <!-- Quantity controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp">
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_minus"
+                            android:contentDescription="Decrease" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="36dp"
+                            android:text="1"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondary" />
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Increase" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Delete button -->
+                <ImageButton
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Remove"
+                    app:tint="#D32F2F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_white"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_espresso1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_white"
+                    android:contentDescription="Product" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espresso"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Medium"
+                        android:textColor="#82695C"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2.99"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp" />
+
+                    <!-- Quantity controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp">
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_minus"
+                            android:contentDescription="Decrease" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="36dp"
+                            android:text="1"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondary" />
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Increase" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Delete button -->
+                <ImageButton
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Remove"
+                    app:tint="#D32F2F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_white"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_espresso4"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_white"
+                    android:contentDescription="Product" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Americano"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Large"
+                        android:textColor="#82695C"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3.40"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp" />
+
+                    <!-- Quantity controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp">
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_minus"
+                            android:contentDescription="Decrease" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="36dp"
+                            android:text="1"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondary" />
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Increase" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Delete button -->
+                <ImageButton
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Remove"
+                    app:tint="#D32F2F" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner_white"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_espresso5"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_white"
+                    android:contentDescription="Product" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold Brew"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: Small"
+                        android:textColor="#82695C"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2.95"
+                        android:textColor="@color/colorSecondary"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp" />
+
+                    <!-- Quantity controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp">
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_minus"
+                            android:contentDescription="Decrease" />
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="36dp"
+                            android:text="1"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondary" />
+
+                        <ImageButton
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/rounded_edit_bg"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Increase" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Delete button -->
+                <ImageButton
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Remove"
+                    app:tint="#D32F2F" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Promo Code -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="5dp"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo code"
+                android:textColor="@color/colorSecondary"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/promoCodeEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Enter Promo code"
+                    android:background="@drawable/rounded_edit_bg"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/applyPromoBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Payment Method -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment method"
+                android:textColor="@color/colorSecondary"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginBottom="7dp"/>
+
+            <RadioGroup
+                android:id="@+id/paymentRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/cardRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit/Debit Card"
+                    android:textColor="@color/colorSecondary"
+                    android:buttonTint="@color/colorSecondary"
+                    android:background="@drawable/rounded_edit_bg"
+                    android:padding="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/walletRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital Wallet"
+                    android:textColor="@color/colorSecondary"
+                    android:buttonTint="@color/colorSecondary"
+                    android:background="@drawable/rounded_edit_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="9dp"/>
+
+                <RadioButton
+                    android:id="@+id/cashRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash on Delivery"
+                    android:textColor="@color/colorSecondary"
+                    android:buttonTint="@color/colorSecondary"
+                    android:background="@drawable/rounded_edit_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="9dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Place Order Button -->
+        <Button
+            android:id="@+id/placeOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Place Order: $20.50"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/button_bg"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="28dp"/>
+    </LinearLayout>
+</ScrollView>
